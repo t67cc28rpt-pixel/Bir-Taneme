@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#260b1c">
+<title>Bir Tanem ❤️</title>
+<style>
+:root{--bg:#180812;--panel:#2a1020;--pink:#ff7aa8;--rose:#ffb3c9;--cream:#fff0f4;--muted:#e3bdcb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#5b1738 0%,#260d1e 40%,#12070f 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+main{width:min(100% - 28px,900px);margin:auto}.hero{min-height:92svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:54px 8px 35px;position:relative}
+.eyebrow{letter-spacing:.24em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--rose)}h1{font-size:clamp(48px,13vw,100px);line-height:.98;margin:18px 0;color:#fff1f5;text-shadow:0 0 32px #ff4e8b65;font-weight:normal}h1 span{color:var(--pink);font-style:italic}.subtitle{font-size:clamp(17px,4.5vw,23px);color:#f6cdd9;max-width:560px;line-height:1.6}.heart{font-size:32px;color:var(--pink);animation:pulse 1.5s infinite}.btn{border:1px solid #ff8db5;background:linear-gradient(135deg,#ff6298,#c52c68);color:white;padding:14px 21px;border-radius:999px;font:600 14px Arial,sans-serif;cursor:pointer;box-shadow:0 8px 30px #d02d6c35;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.secondary{background:#ffffff0b;border-color:#ff9cbd77;box-shadow:none}.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+section{padding:50px 0}h2{text-align:center;font-weight:normal;font-size:clamp(30px,7vw,45px);margin:0 0 12px}h2 em{color:var(--pink)}.intro{text-align:center;color:var(--muted);line-height:1.7;margin:0 auto 26px;max-width:590px}.card{background:linear-gradient(145deg,#ffffff0d,#ffffff04);border:1px solid #ffb0ca25;border-radius:22px;padding:23px;box-shadow:0 14px 45px #0002}.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:24px auto;max-width:600px}.countbox{background:#ffffff0a;border:1px solid #ffb0ca2b;border-radius:15px;padding:16px 4px;text-align:center}.countbox strong{display:block;font:clamp(24px,6vw,38px) Arial,sans-serif;color:var(--pink)}.countbox small{font:11px Arial,sans-serif;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}.date-note{text-align:center;color:var(--muted);font:12px Arial,sans-serif}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photo{aspect-ratio:4/5;border-radius:17px;border:1px dashed #ff9cbd70;background:linear-gradient(145deg,#4a1731,#231020);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;position:relative;color:#f8b9cd;padding:15px}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo span{position:relative;z-index:1;text-shadow:0 2px 8px #000}.photo.has-img span{display:none}.photo:nth-child(3){grid-column:1/-1;aspect-ratio:16/9}.upload-label{display:block;text-align:center;margin-top:16px;font:12px Arial,sans-serif;color:var(--muted)}input[type=file]{max-width:100%;font:12px Arial,sans-serif;color:var(--muted);margin-top:9px}
+.letter{font-size:18px;line-height:1.9;color:#ffe5ed;white-space:pre-line}.signature{font-style:italic;color:var(--pink);text-align:right;font-size:23px;margin-top:18px}.surprise{text-align:center;min-height:190px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px}.surprise-message{font-size:clamp(21px,5vw,30px);line-height:1.5;color:#fff0f5;max-width:650px}.musicbar{display:flex;align-items:center;justify-content:center;gap:13px;flex-wrap:wrap;text-align:center}.musicnote{font-size:22px;color:var(--pink)}footer{text-align:center;padding:45px 0 30px;color:#cfa8b8;font:12px Arial,sans-serif;line-height:1.8}
+.floating-heart{position:fixed;bottom:-30px;z-index:5;pointer-events:none;animation:floatUp linear forwards;opacity:.8;color:#ff79a7}@keyframes floatUp{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}@keyframes pulse{50%{transform:scale(1.18);text-shadow:0 0 25px #ff679e}}
+@media(min-width:650px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.photo:nth-child(3){grid-column:auto;aspect-ratio:4/5}.card{padding:32px}.hero{min-height:95svh}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="eyebrow">Sadece ikimize ait bir yer</div>
+    <div class="heart" aria-hidden="true">♥</div>
+    <h1>Bir <span>Tanem</span></h1>
+    <p class="subtitle">Bu dünyada binlerce hikâye var… ama benim en sevdiğim, seninle yazdığımız.</p>
+    <div class="actions">
+      <a class="btn" href="#mektup" style="text-decoration:none">Sana bir şey söyleyeceğim ♥</a>
+      <button class="btn secondary" id="musicToggle" type="button">♫ Müziği başlat</button>
+    </div>
+  </header>
+
+  <section id="zaman">
+    <h2>Bizim <em>hikâyemiz</em></h2>
+    <p class="intro">16 Haziran 2026'dan beri, kalbimin en güzel yerinde sen varsın.</p>
+    <div class="counter" aria-label="Birlikte geçen süre">
+      <div class="countbox"><strong id="days">—</strong><small>Gün</small></div>
+      <div class="countbox"><strong id="hours">—</strong><small>Saat</small></div>
+      <div class="countbox"><strong id="minutes">—</strong><small>Dakika</small></div>
+      <div class="countbox"><strong id="seconds">—</strong><small>Saniye</small></div>
+    </div>
+    <p class="date-note">Başlangıcımız: 16.06.2026 · Sayaç her saniye yenilenir.</p>
+  </section>
+
+  <section id="fotograflar">
+    <h2>En güzel <em>anlarımız</em></h2>
+    <p class="intro">Her fotoğraf bir anı, her anı “iyi ki sen” demek için yeni bir sebep.</p>
+    <div class="gallery">
+      <div class="photo" id="photo0"><span>♥<br>İlk güzel anımız</span></div>
+      <div class="photo" id="photo1"><span>♥<br>Gülüşün aklımda</span></div>
+      <div class="photo" id="photo2"><span>♥<br>Biriktireceğimiz nice anıya…</span></div>
+    </div>
+    <label class="upload-label" for="photoUpload">Fotoğraflarınızı bu cihazda önizlemek için seçin (3 fotoğrafa kadar).</label>
+    <div style="text-align:center"><input id="photoUpload" type="file" accept="image/*" multiple></div>
+    <p class="date-note">Not: Buradan seçilen fotoğraflar yalnızca bu cihazdaki önizlemede görünür. Siteyi herkese açık paylaşırken fotoğrafları dosyalara eklemek gerekir.</p>
+  </section>
+
+  <section id="mektup">
+    <h2>Kalbimden <em>sana</em></h2>
+    <div class="card">
+      <div class="letter">Bir Tanem,
+
+Bazen sana olan sevgimi anlatacak kelime bulamıyorum. Sonra gözlerini, gülüşünü, sesini düşünüyorum ve anlıyorum ki bazı duygular anlatılmak için değil, kalbin içinde yaşamak için var.
+
+Seninle geçen her an benim için çok kıymetli. Uzakta olsak bile aklımın en güzel köşesinde sen varsın. Güzel günlerimiz çoğalsın, zor günlerde birbirimizin elini daha sıkı tutalım. Her yeni başlangıçta yine seni seçeyim; her hikâyede yolum sana çıksın.
+
+Sana verebileceğim en güzel söz şu: Seni yalnızca bugün değil, yarın da, sonraki günlerde de sevgiyle seçmek istiyorum. İyi ki hayatıma geldin. İyi ki “biz” olduk.
+
+</div>
+      <div class="signature">Seni çok seven, hep senin… ♥</div>
+    </div>
+  </section>
+
+  <section id="surpriz">
+    <h2>Küçük bir <em>sürpriz</em></h2>
+    <p class="intro">Hazır mısın, Bir Tanem?</p>
+    <div class="card surprise">
+      <div class="surprise-message" id="surpriseMessage">Kalbine dokunacak bir mesaj için butona bas…</div>
+      <button class="btn" id="surpriseBtn" type="button">Sürprizimi aç ♥</button>
+    </div>
+  </section>
+
+  <section id="muzik">
+    <h2>Bizim <em>şarkımız</em></h2>
+    <p class="intro">Bu sayfa için hazırlanmış yumuşak, romantik bir melodi. Başlatmak veya durdurmak senin elinde.</p>
+    <div class="card musicbar"><span class="musicnote">♫</span><span id="musicStatus">Melodi kapalı</span><button class="btn secondary" id="musicToggle2" type="button">♫ Müziği başlat</button></div>
+    <p class="date-note" style="margin-top:12px">Telefonlarda ses, düğmeye dokunduktan sonra başlar.</p>
+  </section>
+  <footer>Bir Tanem'e, kalbimin en güzel yerine… ♥<br>Bu küçük site, kocaman bir sevginin hatırası.</footer>
+</main>
+<script>
+const startDate = new Date(2026, 5, 16, 0, 0, 0); // 16 Haziran 2026, yerel saat
+function updateCounter(){
+  let diff = Math.max(0, Date.now() - startDate.getTime());
+  const day = 86400000, hour = 3600000, minute = 60000;
+  const d = Math.floor(diff/day); diff -= d*day;
+  const h = Math.floor(diff/hour); diff -= h*hour;
+  const m = Math.floor(diff/minute); diff -= m*minute;
+  document.getElementById('days').textContent = d;
+  document.getElementById('hours').textContent = h;
+  document.getElementById('minutes').textContent = m;
+  document.getElementById('seconds').textContent = Math.floor(diff/1000);
+}
+updateCounter(); setInterval(updateCounter,1000);
+
+const messages = [
+  "Bir Tanem, kalabalık bir dünyada kalbimin evi sensin. ♥",
+  "Bin kez başa dönsem, yine seni bulmak isterdim.",
+  "En sevdiğim gelecek hayali, içinde senin olduğun gelecek.",
+  "Bugün de kararım aynı: iyi ki sen, iyi ki biz.",
+  "Sana sarılabildiğim her gün, dünyanın en güzel günü.",
+  "Mesafeler ne olursa olsun, kalbim sana giden yolu biliyor. 💗"
+];
+let lastMessage=-1;
+document.getElementById('surpriseBtn').addEventListener('click',()=>{
+  let next; do{next=Math.floor(Math.random()*messages.length)}while(next===lastMessage);
+  lastMessage=next;
+  document.getElementById('surpriseMessage').textContent=messages[next];
+  for(let i=0;i<9;i++)setTimeout(createHeart,i*90);
+});
+function createHeart(){
+  const h=document.createElement('div');h.className='floating-heart';h.textContent=['♥','♡','❤'][Math.floor(Math.random()*3)];
+  h.style.left=Math.random()*100+'vw';h.style.fontSize=(14+Math.random()*22)+'px';h.style.animationDuration=(4+Math.random()*4)+'s';
+  document.body.appendChild(h);setTimeout(()=>h.remove(),8500);
+}
+setInterval(()=>{if(Math.random()>.45)createHeart()},1800);
+
+document.getElementById('photoUpload').addEventListener('change',e=>{
+  [...e.target.files].slice(0,3).forEach((file,i)=>{
+    const reader=new FileReader();
+    reader.onload=ev=>{
+      const box=document.getElementById('photo'+i);
+      box.querySelector('img')?.remove();
+      const img=document.createElement('img');img.src=ev.target.result;img.alt='Birlikte fotoğrafımız';
+      box.appendChild(img);box.classList.add('has-img');
+    };
+    reader.readAsDataURL(file);
+  });
+});
+
+// Original gentle melody generated locally with Web Audio; no external track or network required.
+let audioCtx=null, melodyTimer=null, noteIndex=0, melodyOn=false;
+const notes=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23,261.63,329.63,392.00,523.25,440.00,392.00,329.63,293.66];
+function playNote(freq,when,duration){
+  const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+  osc.type='sine';osc.frequency.setValueAtTime(freq,when);
+  gain.gain.setValueAtTime(0.0001,when);gain.gain.exponentialRampToValueAtTime(0.075,when+0.04);gain.gain.exponentialRampToValueAtTime(0.0001,when+duration);
+  osc.connect(gain);gain.connect(audioCtx.destination);osc.start(when);osc.stop(when+duration+0.03);
+}
+function melodyStep(){
+  if(!melodyOn||!audioCtx)return;
+  const now=audioCtx.currentTime;playNote(notes[noteIndex%notes.length],now,0.55);
+  if(noteIndex%4===0)playNote(notes[(noteIndex+4)%notes.length]/2,now,0.8);
+  noteIndex++;melodyTimer=setTimeout(melodyStep,520);
+}
+async function toggleMusic(){
+  if(!melodyOn){
+    try{audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();await audioCtx.resume();melodyOn=true;noteIndex=0;melodyStep();}
+    catch(err){document.getElementById('musicStatus').textContent='Bu tarayıcıda ses başlatılamadı.';return;}
+  }else{melodyOn=false;clearTimeout(melodyTimer);if(audioCtx)await audioCtx.suspend();}
+  updateMusicUI();
+}
+function updateMusicUI(){
+  document.getElementById('musicStatus').textContent=melodyOn?'Romantik melodi çalıyor ♥':'Melodi kapalı';
+  document.getElementById('musicToggle').textContent=melodyOn?'Ⅱ Müziği durdur':'♫ Müziği başlat';
+  document.getElementById('musicToggle2').textContent=melodyOn?'Ⅱ Müziği durdur':'♫ Müziği başlat';
+}
+document.getElementById('musicToggle').addEventListener('click',toggleMusic);
+document.getElementById('musicToggle2').addEventListener('click',toggleMusic);
+</script>
+</body>
+</html>
